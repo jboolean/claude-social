@@ -1,0 +1,7 @@
+{
+  "channelId": "REPLACE_ME",
+  "slackUserId": "REPLACE_ME",
+  "model": "claude-haiku-4-5",
+  "minDelayMinutes": 1,
+  "maxDelayMinutes": 20
+}

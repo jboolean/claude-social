@@ -1,0 +1,8 @@
+node_modules/
+.claude/
+CHARACTER.md
+MEMORY.md
+memory/
+state.json
+config.json
+claude-config/
