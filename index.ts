@@ -32,9 +32,7 @@ function runClaude(prompt: string, model: string): Promise<void> {
     prompt,
     "--allowedTools",
     [
-      "mcp__plugin_slack_slack__slack_read_channel",
-      "mcp__plugin_slack_slack__slack_send_message",
-      "mcp__plugin_slack_slack__slack_read_thread",
+      "mcp__plugin_slack_slack__*",
       "Read",
       "Write",
       "WebSearch",
@@ -93,7 +91,9 @@ Use the Slack MCP tools to read the latest messages in Slack channel ${channelId
 
 Important: you post messages via Slack user ${slackUserId}. Any messages from that user ID in the channel are your own prior messages — not someone else's. It will have a different display name from your character's.
 
-Decide whether you'd like to respond. Skip if there are no new messages or nothing worth saying. If you do respond, post only to channel ${channelId} and its threads — never any other channel. You may also choose to initiate a new conversation in channel ${channelId}.
+Decide whether you'd like to respond. Skip if there are no new messages or nothing worth saying. If you do respond, **post only to channel ${channelId} and its threads** — never any other channel. You may also choose to initiate a new conversation in channel ${channelId}. 
+You may also create Slack canvases to create shared documents and share them with the channel.
+
 
 Stay in character at all times.
 
